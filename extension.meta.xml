@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension id="readonly_authors" status="experimental" xmlns="http://getsymphony.com/schemas/extension/1.0">
+	<name>Read Only Authors</name>
+	<description>
+		Makes some authors read-only
+	</description>
+	<repo type="github">https://github.com/deuxhuithuit/readonly_authors</repo>
+	<!--url type="discuss">https://www.getsymphony.com/discuss/thread/xxx/</url-->
+	<url type="issues">https://github.com/deuxhuithuit/readonly_authors/issues</url>
+	<types>
+		<type>Authors</type>
+		<type>Workflow</type>
+		<type>Read Only</type>
+	</types>
+	<authors>
+		<author>
+			<name github="DeuxHuitHuit" symphony="nitriques" twitter="DeuxHuitHuit">Deux Huit Huit</name>
+			<website>https://deuxhuithuit.com/</website>
+		</author>
+	</authors>
+	<dependencies>
+		<!-- None -->
+	</dependencies>
+	<releases>
+		<release version="1.0.0" date="2019-01-08" min="2.7.x" max="2.x.x">
+			- First release
+		</release>
+	</releases>
+</extension>
