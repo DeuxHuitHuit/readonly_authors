@@ -11,7 +11,7 @@
 	
 	var disableForms = function (stack) {
 		stack.find('input, select, textarea, .CodeMirror, [contenteditable]').attr('readonly', 'readonly');
-		stack.find('')
+		stack.find('select').attr('disabled', 'disabled');
 	};
 	
 	var init = function () {
