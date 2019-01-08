@@ -22,6 +22,9 @@
 		<!-- None -->
 	</dependencies>
 	<releases>
+		<release version="1.0.1" date="2019-01-08" min="2.7.x" max="2.x.x">
+			- First patch release (bug fixes!)
+		</release>
 		<release version="1.0.0" date="2019-01-08" min="2.7.x" max="2.x.x">
 			- First release
 		</release>
