@@ -129,8 +129,12 @@ class extension_readonly_authors extends Extension
     {
         // store the callback array locally
         $c = Administration::instance()->getPageCallback();
-        // publish page
-        if($c['driver'] === 'systemauthors') {
+        // Ignore author page
+        if ($c['driver'] === 'systemauthors') {
+            return;
+        }
+        // Ignore non-read only authors!
+        if (!self::isReadOnly(Symphony::Author()->get('id'))) {
             return;
         }
         Administration::instance()->Page->addScriptToHead(URL.'/extensions/readonly_authors/assets/readonly_authors.js');
